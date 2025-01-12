@@ -1,7 +1,6 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { bootstrapApplication } from '@angular/platform-browser'; // Function to bootstrap a standalone Angular app.
+import { AppComponent } from './app/app.component'; // Main component of the app.
 
-import { AppModule } from './app/app.module';
-
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+bootstrapApplication(AppComponent).catch((err) => console.error(err));
+// Initializes the application using the standalone `AppComponent` with `appConfig`.
+// Logs any errors during startup to the console.

@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px; /* Increased width for better visibility */
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 40px; /* Added more padding */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #3498db;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+h1 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 28px; /* Increased font size */
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Increased spacing between form elements */
+  margin-top: 25px; /* Increased margin between header and form */
+}
+
+.mat-form-field {
+  position: relative;
+  width: 100%;
+}
+
+.mat-label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 18px; /* Increased label font size */
+  color: #7f8c8d;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+input {
+  width: 100%;
+  padding: 14px 15px; /* Increased padding for input fields */
+  border: 1.5px solid #bdc3c7; /* Thicker border for better visibility */
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px; /* Increased input text size */
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+input:focus + .mat-label,
+input:not(:placeholder-shown) + .mat-label {
+  top: -12px;
+  font-size: 14px;
+  color: #3498db;
+  background-color: #ffffff;
+  padding: 0 5px;
+}
+
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 14px; /* Increased button padding */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px; /* Increased button text size */
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #6da5e6;
+}
+
+.result {
+  margin-top: 30px; /* Increased margin above result section */
+  padding: 20px; /* Increased padding for result box */
+  background: #f4f7f6;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 20px; /* Increased result heading font size */
+  font-weight: bold;
+}
+
+p {
+  background: #f8f9fa;
+  padding: 12px; /* Increased padding for result text */
+  border-radius: 6px;
+  font-size: 16px; /* Increased font size */
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  color: #2c3e50;
+}
